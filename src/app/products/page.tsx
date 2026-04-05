@@ -104,9 +104,14 @@ const categories = [
     title: "機械接頭",
     products: [
       {
-        name: "EMT 機械接頭",
-        material: "鍍鋅鋼 / 不鏽鋼",
-        desc: "適用於 EMT 管路系統的機械式連接，安裝快速便利。",
+        name: "不鏽鋼管機械接頭",
+        material: "不鏽鋼",
+        desc: "適用於不鏽鋼管路系統的機械式連接，耐腐蝕、安裝快速便利。",
+      },
+      {
+        name: "鍍鋅鋼管機械接頭",
+        material: "鍍鋅鋼",
+        desc: "適用於鍍鋅鋼管的管路連接，堅固耐用，規格齊全。",
       },
       {
         name: "防水機械接頭",
@@ -188,7 +193,7 @@ const itemListJsonLd = {
       "@type": "ListItem",
       position: 5,
       name: "機械接頭",
-      description: "EMT機械接頭與防水機械接頭，安裝快速便利。",
+      description: "適用於不鏽鋼管、鍍鋅鋼管等管路系統的機械式接頭，含防水型。",
     },
     {
       "@type": "ListItem",
