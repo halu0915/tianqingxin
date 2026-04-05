@@ -223,7 +223,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Quick Nav */}
-      <section className="bg-gold-50 border-b border-gold-100 sticky top-16 z-40 overflow-hidden">
+      <section className="bg-gold-50 border-b border-gold-100 sticky top-[72px] z-40 overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 py-3 flex gap-4 overflow-x-auto scrollbar-hide">
           {categories.map((cat) => (
             <a

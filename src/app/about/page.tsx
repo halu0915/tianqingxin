@@ -76,14 +76,22 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-dark-900 to-dark-800 rounded-2xl p-12 flex items-center justify-center min-h-[300px]">
-            <Image
-              src="/logo.jpg"
-              alt="天擎鑫有限公司 TQH Logo"
-              width={320}
-              height={300}
-              className="rounded-xl"
-            />
+          <div className="bg-gradient-to-br from-gold-100 via-gold-50 to-warm-100 rounded-2xl p-10 flex flex-col items-center justify-center min-h-[350px] text-center border border-gold-200">
+            <div className="w-36 h-36 rounded-full overflow-hidden border-4 border-gold-500 mb-6 shadow-xl shadow-gold-400/30">
+              <Image
+                src="/logo.jpg"
+                alt="天擎鑫有限公司 TQH Logo"
+                width={144}
+                height={144}
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <h3 className="text-2xl font-bold text-dark-800 mb-1">天擎鑫有限公司</h3>
+            <p className="text-gold-600 tracking-[0.3em] text-sm mb-4">TQH Co., Ltd.</p>
+            <div className="w-12 h-px bg-gold-500 mb-4" />
+            <p className="text-gray-600 text-sm leading-relaxed max-w-xs">
+              專業技術 / 品質追求 / 服務至上 / 誠信負責
+            </p>
           </div>
         </div>
       </section>
