@@ -1,0 +1,60 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-dark-900 text-gray-300 mt-auto">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Company Info */}
+          <div>
+            <h3 className="text-xl font-bold text-gold-400 mb-3">天擎鑫有限公司</h3>
+            <p className="text-gray-400 text-sm leading-relaxed">
+              專注於接線盒及管材配件供應，提供客製化材料管控服務，降低您的工程成本。
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h4 className="font-semibold text-white mb-3">快速連結</h4>
+            <ul className="space-y-2 text-sm">
+              <li>
+                <Link href="/about" className="hover:text-gold-400 transition-colors">
+                  關於我們
+                </Link>
+              </li>
+              <li>
+                <Link href="/products" className="hover:text-gold-400 transition-colors">
+                  產品介紹
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="hover:text-gold-400 transition-colors">
+                  服務項目
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="hover:text-gold-400 transition-colors">
+                  聯絡我們
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h4 className="font-semibold text-white mb-3">聯絡資訊</h4>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li>電話：(02) 0000-0000</li>
+              <li>信箱：info@tianqingxin.com</li>
+              <li>地址：臺北市中山區松江路204巷36號</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500">
+          &copy; {new Date().getFullYear()} 天擎鑫有限公司. All rights reserved.
+        </div>
+      </div>
+    </footer>
+  );
+}

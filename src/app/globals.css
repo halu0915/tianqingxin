@@ -1,26 +1,66 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gold-50: #FDF8E8;
+  --gold-100: #F9EDBE;
+  --gold-200: #F0D98C;
+  --gold-300: #E4C45A;
+  --gold-400: #DAA520;
+  --gold-500: #B8860B;
+  --gold-600: #956D09;
+  --gold-700: #725407;
+  --gold-800: #4F3B05;
+  --gold-900: #2C2103;
+
+  --warm-50: #FEFDFB;
+  --warm-100: #FAF7F2;
+  --warm-200: #F0EBE1;
+  --warm-300: #E0D6C8;
+
+  --dark-800: #1A1A1A;
+  --dark-900: #0F0F0F;
+
+  --background: #FEFDFB;
+  --foreground: #1A1A1A;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+  --color-warm-50: var(--warm-50);
+  --color-warm-100: var(--warm-100);
+  --color-warm-200: var(--warm-200);
+  --color-warm-300: var(--warm-300);
+  --color-dark-800: var(--dark-800);
+  --color-dark-900: var(--dark-900);
+  --font-sans: var(--font-noto-sans-tc), "Noto Sans TC", "Microsoft JhengHei", "PingFang TC", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar for quick-nav while keeping scroll functionality */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
