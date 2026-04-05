@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { productIconMap } from "@/components/ProductIcons";
 
-const SITE_URL = "https://www.tianqingxin.com.tw";
+const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
   title: "接線盒、牙條、管配件、防水金屬軟管供應",

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ContactForm from "./ContactForm";
 
-const SITE_URL = "https://www.tianqingxin.com.tw";
+const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
   title: "聯絡我們 | 管材配件詢價與合作洽談",

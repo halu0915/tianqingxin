@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const SITE_URL = "https://www.tianqingxin.com.tw";
+const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
   title: "服務項目 | 管配件供應、訂製與材料管控服務",

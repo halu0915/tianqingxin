@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://www.tianqingxin.com.tw";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://tianqingxin.vercel.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [

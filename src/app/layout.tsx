@@ -12,7 +12,7 @@ const notoSansTC = Noto_Sans_TC({
   weight: ["400", "500", "600", "700"],
 });
 
-const SITE_URL = "https://www.tianqingxin.com.tw";
+const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
   title: {
