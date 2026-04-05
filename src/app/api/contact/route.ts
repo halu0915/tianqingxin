@@ -161,7 +161,7 @@ export async function POST(request: Request) {
     const resend = new Resend(apiKey);
 
     await resend.emails.send({
-      from: "天擎鑫網站 <noreply@tianqingxin.com>",
+      from: "天擎鑫網站 <onboarding@resend.dev>",
       to: "TianQingHsin@gmail.com",
       subject: `[網站聯絡] ${escapeHtml(subject)}`,
       replyTo: email,
