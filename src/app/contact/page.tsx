@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ContactForm from "./ContactForm";
 
 const SITE_URL = "https://www.tianqingxin.com.tw";
 
@@ -37,6 +38,12 @@ const contactInfo = [
     icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
     label: "營業時間",
     value: "週一至週五 09:00 - 18:00",
+  },
+  {
+    icon: "M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z",
+    label: "LINE 官方帳號",
+    value: "@tianqingxin",
+    link: "https://line.me/R/ti/p/@tianqingxin",
   },
 ];
 
@@ -103,91 +110,7 @@ export default function ContactPage() {
             <h2 className="text-2xl font-bold text-dark-800 mb-6">
               傳送<span className="text-gold-500">訊息</span>
             </h2>
-            <form className="space-y-5">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-                <div>
-                  <label
-                    htmlFor="name"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    姓名
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    className="w-full px-4 py-3 border border-warm-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent bg-warm-50"
-                    placeholder="您的姓名"
-                  />
-                </div>
-                <div>
-                  <label
-                    htmlFor="phone"
-                    className="block text-sm font-medium text-gray-700 mb-1"
-                  >
-                    電話
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full px-4 py-3 border border-warm-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent bg-warm-50"
-                    placeholder="您的電話"
-                  />
-                </div>
-              </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  電子郵件
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  className="w-full px-4 py-3 border border-warm-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent bg-warm-50"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="subject"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  主旨
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  className="w-full px-4 py-3 border border-warm-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent bg-warm-50"
-                  placeholder="諮詢主旨"
-                />
-              </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700 mb-1"
-                >
-                  訊息內容
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  className="w-full px-4 py-3 border border-warm-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gold-400 focus:border-transparent bg-warm-50 resize-none"
-                  placeholder="請描述您的需求..."
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full bg-gold-500 hover:bg-gold-600 text-white font-semibold py-3.5 rounded-lg transition-colors"
-              >
-                送出訊息
-              </button>
-            </form>
+            <ContactForm />
           </div>
 
           {/* Contact Info */}
@@ -215,7 +138,18 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-500">{info.label}</p>
-                    <p className="text-dark-800 font-medium">{info.value}</p>
+                    {"link" in info && info.link ? (
+                      <a
+                        href={info.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-dark-800 font-medium hover:text-gold-500 transition-colors"
+                      >
+                        {info.value}
+                      </a>
+                    ) : (
+                      <p className="text-dark-800 font-medium">{info.value}</p>
+                    )}
                   </div>
                 </div>
               ))}
