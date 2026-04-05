@@ -59,7 +59,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3">聯絡資訊</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>電話：(02) 0000-0000</li>
+              <li>電話：0916-027-603</li>
               <li>信箱：info@tianqingxin.com</li>
               <li>地址：臺北市中山區松江路204巷36號</li>
             </ul>

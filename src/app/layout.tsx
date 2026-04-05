@@ -72,11 +72,11 @@ const organizationJsonLd = {
     postalCode: "104",
     addressCountry: "TW",
   },
-  telephone: "(02) 0000-0000",
+  telephone: "0916-027-603",
   email: "info@tianqingxin.com",
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "(02) 0000-0000",
+    telephone: "0916-027-603",
     contactType: "customer service",
     availableLanguage: "Chinese",
   },

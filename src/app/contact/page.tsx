@@ -22,7 +22,7 @@ const contactInfo = [
   {
     icon: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
     label: "電話",
-    value: "(02) 0000-0000",
+    value: "0916-027-603",
   },
   {
     icon: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z",
@@ -54,7 +54,7 @@ const localBusinessJsonLd = {
   description:
     "專業管材配件供應商，提供接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管等水電材料。",
   url: SITE_URL,
-  telephone: "(02) 0000-0000",
+  telephone: "0916-027-603",
   email: "info@tianqingxin.com",
   address: {
     "@type": "PostalAddress",
@@ -77,7 +77,7 @@ const localBusinessJsonLd = {
   },
   contactPoint: {
     "@type": "ContactPoint",
-    telephone: "(02) 0000-0000",
+    telephone: "0916-027-603",
     contactType: "customer service",
     email: "info@tianqingxin.com",
     availableLanguage: "Chinese",
