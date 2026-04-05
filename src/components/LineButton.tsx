@@ -3,7 +3,7 @@
 export default function LineButton() {
   return (
     <a
-      href="https://line.me/R/ti/p/@tianqingxin"
+      href="https://line.me/R/ti/p/@199vmkbg"
       target="_blank"
       rel="noopener noreferrer"
       aria-label="加入 LINE 好友"
