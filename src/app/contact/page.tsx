@@ -35,6 +35,7 @@ const contactInfo = [
     icon: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z M15 11a3 3 0 11-6 0 3 3 0 016 0z",
     label: "地址",
     value: "臺北市中山區松江路204巷36號",
+    link: "https://www.google.com/maps/search/?api=1&query=臺北市中山區松江路204巷36號",
   },
   {
     icon: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z",
@@ -161,7 +162,7 @@ export default function ContactPage() {
             <div className="mt-8 rounded-2xl overflow-hidden">
               <iframe
                 title="天擎鑫有限公司位置"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.5!2d121.5325!3d25.0580!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDAzJzI4LjgiTiAxMjHCsDMxJzU3LjAiRQ!5e0!3m2!1szh-TW!2stw!4v1700000000000"
+                src="https://maps.google.com/maps?q=臺北市中山區松江路204巷36號&t=&z=17&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="300"
                 style={{ border: 0 }}

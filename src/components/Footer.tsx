@@ -61,7 +61,7 @@ export default function Footer() {
             <ul className="space-y-2 text-sm text-gray-400">
               <li><a href="tel:0916027603" className="hover:text-gold-400 transition-colors">電話：0916-027-603</a></li>
               <li><a href="mailto:TianQingHsin@gmail.com" className="hover:text-gold-400 transition-colors">信箱：TianQingHsin@gmail.com</a></li>
-              <li>地址：臺北市中山區松江路204巷36號</li>
+              <li><a href="https://www.google.com/maps/search/?api=1&query=臺北市中山區松江路204巷36號" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">地址：臺北市中山區松江路204巷36號</a></li>
             </ul>
           </div>
         </div>
