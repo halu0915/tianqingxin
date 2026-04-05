@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 const navLinks = [
@@ -16,13 +17,23 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-gold-100">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="text-2xl font-bold text-gold-600">天擎鑫</span>
-          <span className="text-sm text-gray-500 hidden sm:inline">
-            有限公司
-          </span>
+          <Image
+            src="/logo.jpg"
+            alt="天擎鑫有限公司 Logo"
+            width={44}
+            height={44}
+            className="rounded"
+            priority
+          />
+          <div className="flex flex-col leading-tight">
+            <span className="text-lg font-bold text-gold-600">天擎鑫</span>
+            <span className="text-[10px] text-gray-400 hidden sm:block">
+              TQH Co., Ltd.
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}

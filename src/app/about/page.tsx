@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 const SITE_URL = "https://www.tianqingxin.com.tw";
 
@@ -75,10 +76,14 @@ export default function AboutPage() {
               </p>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-gold-50 to-gold-100 rounded-2xl p-12 flex items-center justify-center min-h-[300px]">
-            <p className="text-gold-600 font-medium text-lg">
-              [ 公司照片 / Logo 預留區 ]
-            </p>
+          <div className="bg-gradient-to-br from-dark-900 to-dark-800 rounded-2xl p-12 flex items-center justify-center min-h-[300px]">
+            <Image
+              src="/logo.jpg"
+              alt="天擎鑫有限公司 TQH Logo"
+              width={320}
+              height={300}
+              className="rounded-xl"
+            />
           </div>
         </div>
       </section>

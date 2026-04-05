@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,7 +8,19 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-gold-400 mb-3">天擎鑫有限公司</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo.jpg"
+                alt="天擎鑫有限公司 Logo"
+                width={48}
+                height={48}
+                className="rounded"
+              />
+              <div>
+                <h3 className="text-lg font-bold text-gold-400">天擎鑫有限公司</h3>
+                <p className="text-xs text-gray-500">TQH Co., Ltd.</p>
+              </div>
+            </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               專注於接線盒及管材配件供應，提供客製化材料管控服務，降低您的工程成本。
             </p>
