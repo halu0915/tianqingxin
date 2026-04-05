@@ -73,7 +73,7 @@ const organizationJsonLd = {
     addressCountry: "TW",
   },
   telephone: "0916-027-603",
-  email: "info@tianqingxin.com",
+  email: "TianQingHsin@gmail.com",
   contactPoint: {
     "@type": "ContactPoint",
     telephone: "0916-027-603",

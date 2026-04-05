@@ -41,7 +41,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: "天擎鑫網站 <noreply@tianqingxin.com>",
-      to: "info@tianqingxin.com",
+      to: "TianQingHsin@gmail.com",
       subject: `[網站聯絡] ${subject}`,
       replyTo: email,
       html: `
