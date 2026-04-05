@@ -59,8 +59,8 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-white mb-3">聯絡資訊</h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>電話：0916-027-603</li>
-              <li>信箱：TianQingHsin@gmail.com</li>
+              <li>電話：<a href="tel:0916027603" className="hover:text-gold-400 transition-colors">0916-027-603</a></li>
+              <li>信箱：<a href="mailto:TianQingHsin@gmail.com" className="hover:text-gold-400 transition-colors">TianQingHsin@gmail.com</a></li>
               <li>地址：臺北市中山區松江路204巷36號</li>
             </ul>
           </div>
