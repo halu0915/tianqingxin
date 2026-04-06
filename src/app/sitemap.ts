@@ -5,34 +5,24 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "https://tianqingxin.vercel
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: SITE_URL,
-      lastModified: new Date("2026-04-05"),
-      changeFrequency: "weekly",
-      priority: 1,
+      url: `${SITE_URL}/`,
+      lastModified: new Date("2026-04-06"),
     },
     {
       url: `${SITE_URL}/about`,
       lastModified: new Date("2026-04-05"),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: `${SITE_URL}/products`,
-      lastModified: new Date("2026-04-05"),
-      changeFrequency: "weekly",
-      priority: 0.9,
+      lastModified: new Date("2026-04-06"),
     },
     {
       url: `${SITE_URL}/services`,
       lastModified: new Date("2026-04-05"),
-      changeFrequency: "monthly",
-      priority: 0.8,
     },
     {
       url: `${SITE_URL}/contact`,
-      lastModified: new Date("2026-04-05"),
-      changeFrequency: "monthly",
-      priority: 0.7,
+      lastModified: new Date("2026-04-06"),
     },
   ];
 }
