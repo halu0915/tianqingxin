@@ -4,7 +4,7 @@ import Image from "next/image";
 const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
-  title: "關於我們 | 管材配件與水電材料專業供應商",
+  title: "關於我們",
   description:
     "天擎鑫有限公司專注接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管供應，提供客製化材料管控，服務建築水電機電工程。",
   openGraph: {

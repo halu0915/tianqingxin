@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
-  title: "聯絡我們 | 管材配件詢價與合作洽談",
+  title: "聯絡我們",
   description:
     "聯繫天擎鑫有限公司，詢價接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，臺北市中山區松江路，歡迎來電或填寫表單。",
   openGraph: {

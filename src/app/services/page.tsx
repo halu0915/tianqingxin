@@ -4,7 +4,7 @@ import Link from "next/link";
 const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
-  title: "服務項目 | 管配件供應、訂製與材料管控服務",
+  title: "服務項目",
   description:
     "天擎鑫提供接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管供應，另有特殊規格訂製、品質檢驗與客製化材料管控服務。",
   openGraph: {

@@ -5,7 +5,7 @@ import { productIconMap } from "@/components/ProductIcons";
 const SITE_URL = "https://tianqingxin.vercel.app";
 
 export const metadata: Metadata = {
-  title: "接線盒、牙條、管配件、防水金屬軟管供應",
+  title: "天擎鑫有限公司 | 接線盒、牙條、管配件、防水金屬軟管供應",
   description:
     "天擎鑫有限公司為專業管材配件供應商，提供接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，適用建築、水電、機電工程。",
   openGraph: {
