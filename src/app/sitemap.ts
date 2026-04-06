@@ -24,5 +24,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${SITE_URL}/contact`,
       lastModified: new Date("2026-04-06"),
     },
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: new Date("2026-04-06"),
+    },
+    {
+      url: `${SITE_URL}/blog/junction-box-guide`,
+      lastModified: new Date("2026-04-06"),
+    },
+    {
+      url: `${SITE_URL}/blog/cast-iron-vs-stainless`,
+      lastModified: new Date("2026-04-06"),
+    },
+    {
+      url: `${SITE_URL}/blog/waterproof-conduit`,
+      lastModified: new Date("2026-04-06"),
+    },
   ];
 }

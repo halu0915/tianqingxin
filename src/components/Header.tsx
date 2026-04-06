@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/about", label: "關於我們" },
   { href: "/products", label: "產品介紹" },
   { href: "/services", label: "服務項目" },
+  { href: "/blog", label: "知識庫" },
   { href: "/contact", label: "聯絡我們" },
 ];
 

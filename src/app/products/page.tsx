@@ -152,6 +152,42 @@ const categories = [
   },
 ];
 
+const productFaqs = [
+  {
+    q: "接線盒有哪些材質可選？",
+    a: "我們提供鍍鋅鋼板、熱浸鍍鋅、白鐵（不鏽鋼）及烤漆等多種材質選擇，可依您的工程環境需求選擇最合適的材質。",
+  },
+  {
+    q: "可以訂製特殊尺寸的接線盒嗎？",
+    a: "可以。我們提供客製化接線盒服務，可依您提供的圖面或規格需求訂製特殊尺寸，小量到大量皆可配合。",
+  },
+  {
+    q: "牙條和管配件有哪些規格？",
+    a: "牙條提供鍍鋅鋼及不鏽鋼材質，多種規格與長度齊全。管配件包含管夾、管束、護管接頭等，規格涵蓋常用尺寸，歡迎來電洽詢詳細規格。",
+  },
+  {
+    q: "大量採購有價格優惠嗎？",
+    a: "有的。接線盒、牙條、防水金屬軟管等產品長期備貨充足，大量採購享有優惠價格，歡迎來電或填寫詢價單取得報價。",
+  },
+  {
+    q: "鑄鐵另件和不銹鋼另件有什麼差別？",
+    a: "鑄鐵另件強度高、價格較經濟，適用於一般管路系統。不銹鋼另件（304/316）耐腐蝕、耐高溫，適用於化工、食品、潔淨環境等對抗腐蝕要求較高的場所。",
+  },
+];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: productFaqs.map((faq) => ({
+    "@type": "Question",
+    name: faq.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: faq.a,
+    },
+  })),
+};
+
 const itemListJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -211,6 +247,10 @@ export default function ProductsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
       {/* Page Header */}
       <section className="bg-gradient-to-br from-dark-900 to-dark-800 text-white py-20">
@@ -276,6 +316,31 @@ export default function ProductsPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="bg-warm-100 py-20">
+        <div className="max-w-3xl mx-auto px-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-dark-800 text-center mb-12">
+            常見<span className="text-gold-500">問題</span>
+          </h2>
+          <div className="space-y-6">
+            {productFaqs.map((faq) => (
+              <div
+                key={faq.q}
+                className="bg-white rounded-2xl p-6 hover:shadow-lg transition-shadow"
+              >
+                <h3 className="text-lg font-semibold text-dark-800 mb-3 flex items-start gap-3">
+                  <span className="text-gold-500 font-bold flex-shrink-0">Q.</span>
+                  {faq.q}
+                </h3>
+                <p className="text-gray-600 leading-relaxed pl-7">
+                  {faq.a}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

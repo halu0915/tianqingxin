@@ -48,6 +48,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/blog" className="hover:text-gold-400 transition-colors">
+                  知識庫
+                </Link>
+              </li>
+              <li>
                 <Link href="/contact" className="hover:text-gold-400 transition-colors">
                   聯絡我們
                 </Link>
