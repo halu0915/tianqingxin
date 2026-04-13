@@ -7,7 +7,7 @@ const SITE_URL = "https://tianqingxin.vercel.app";
 export const metadata: Metadata = {
   title: "產品介紹",
   description:
-    "天擎鑫產品總覽：接線盒（單聯、八角、雙連、歐規）、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，規格齊全，大量現貨供應。",
+    "台北中山區管材配件供應商天擎鑫產品總覽：接線盒（單聯、八角、雙連、歐規）、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，規格齊全，大量現貨供應。",
   openGraph: {
     title: "產品介紹 | 天擎鑫管材配件與水電材料",
     description:

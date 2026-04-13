@@ -3,7 +3,7 @@ const iconClass = "w-full h-full";
 {/* 單聯接線盒 — 直立長方形 */}
 export function SingleBoxIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Tall rectangular box */}
       <rect x="35" y="15" width="50" height="90" rx="4" stroke="currentColor" strokeWidth="2.5" />
       {/* Top knockout */}
@@ -29,7 +29,7 @@ export function SingleBoxIcon({ className = iconClass }: { className?: string })
 {/* 八角接線盒 — 八角形 */}
 export function OctagonBoxIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Octagon shape */}
       <polygon
         points="45,15 75,15 100,40 100,80 75,105 45,105 20,80 20,40"
@@ -58,7 +58,7 @@ export function OctagonBoxIcon({ className = iconClass }: { className?: string }
 {/* 雙連接線盒 — 寬扁正方/橫長方形 */}
 export function DoubleBoxIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Wide rectangular box */}
       <rect x="10" y="30" width="100" height="60" rx="4" stroke="currentColor" strokeWidth="2.5" />
       {/* Center divider */}
@@ -93,7 +93,7 @@ export function DoubleBoxIcon({ className = iconClass }: { className?: string })
 {/* 歐規接線盒 — 圓形 */}
 export function EuroBoxIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Round box body */}
       <circle cx="60" cy="60" r="42" stroke="currentColor" strokeWidth="2.5" />
       {/* Knockouts */}
@@ -115,7 +115,7 @@ export function EuroBoxIcon({ className = iconClass }: { className?: string }) {
 {/* 接線盒總覽圖示（首頁用）— 組合展示 */}
 export function JunctionBoxIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Single box (top-left, tall rectangle) */}
       <rect x="10" y="10" width="22" height="35" rx="2" stroke="currentColor" strokeWidth="1.8" />
       <circle cx="21" cy="27" r="2" stroke="currentColor" strokeWidth="1" />
@@ -136,7 +136,7 @@ export function JunctionBoxIcon({ className = iconClass }: { className?: string 
 
 export function ThreadedRodIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Rod body */}
       <rect x="55" y="10" width="10" height="100" rx="2" stroke="currentColor" strokeWidth="2" />
       {/* Thread lines */}
@@ -153,7 +153,7 @@ export function ThreadedRodIcon({ className = iconClass }: { className?: string 
 
 export function CastIronIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* T-fitting shape */}
       {/* Horizontal pipe */}
       <rect x="10" y="45" width="100" height="22" rx="4" stroke="currentColor" strokeWidth="2.5" />
@@ -173,7 +173,7 @@ export function CastIronIcon({ className = iconClass }: { className?: string }) 
 
 export function StainlessSteelIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* 90-degree elbow fitting */}
       <path
         d="M25 30 L25 65 Q25 95 55 95 L90 95"
@@ -206,7 +206,7 @@ export function StainlessSteelIcon({ className = iconClass }: { className?: stri
 
 export function MechanicalConnectorIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Left pipe */}
       <rect x="10" y="48" width="35" height="24" rx="3" stroke="currentColor" strokeWidth="2" />
       {/* Right pipe */}
@@ -231,7 +231,7 @@ export function MechanicalConnectorIcon({ className = iconClass }: { className?:
 
 export function PipeFittingIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Pipe clamp / U-bolt shape */}
       <path
         d="M35 30 L35 60 Q35 90 60 90 Q85 90 85 60 L85 30"
@@ -268,7 +268,7 @@ export function PipeFittingIcon({ className = iconClass }: { className?: string 
 
 export function FlexConduitIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Left connector fitting */}
       <rect x="8" y="46" width="20" height="28" rx="3" stroke="currentColor" strokeWidth="2.5" />
       <line x1="18" y1="46" x2="18" y2="74" stroke="currentColor" strokeWidth="1" opacity="0.4" />
@@ -312,7 +312,7 @@ export const productIconMap: Record<string, React.FC<{ className?: string }>> = 
 
 export function ConduitConnectorIcon({ className = iconClass }: { className?: string }) {
   return (
-    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className={className} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
       {/* Left: short corrugated pipe stub */}
       <path
         d="M10 50 Q15 46 20 50 Q25 54 30 50"

@@ -7,7 +7,7 @@ const SITE_URL = "https://tianqingxin.vercel.app";
 export const metadata: Metadata = {
   title: "天擎鑫有限公司 | 接線盒、牙條、管配件、防水金屬軟管供應",
   description:
-    "天擎鑫有限公司為專業管材配件供應商，提供接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，適用建築、水電、機電工程。",
+    "天擎鑫有限公司為台北中山區專業管材配件供應商，提供接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，適用建築、水電、機電工程。",
   openGraph: {
     title: "天擎鑫有限公司 | 專業管材配件供應商",
     description:
@@ -106,9 +106,9 @@ export default function HomePage() {
             接線盒 / 牙條 / 鑄鐵另件 / 不銹鋼另件 / 機械接頭 / 管配件 / 防水金屬軟管
           </p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            專業管材配件
+            天擎鑫有限公司
             <br />
-            <span className="text-gold-400">品質值得信賴</span>
+            <span className="text-gold-400">專業管材配件 品質值得信賴</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             天擎鑫有限公司專營水電材料與電氣配件，提供各式接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，
@@ -225,6 +225,8 @@ export default function HomePage() {
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    role="img"
                   >
                     <path
                       strokeLinecap="round"
@@ -287,6 +289,8 @@ export default function HomePage() {
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  role="img"
                 >
                   <path
                     strokeLinecap="round"

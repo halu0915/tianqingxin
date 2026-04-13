@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | 天擎鑫有限公司",
   },
   description:
-    "天擎鑫有限公司位於臺北，專業供應接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，提供客製化材料管控服務，量大價優。",
+    "天擎鑫有限公司位於台北中山區，為專業接線盒供應商與管材配件批發商，提供牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，台北接線盒供應商首選，量大價優。",
   keywords: [
     "接線盒",
     "牙條",
@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     "電氣配件",
     "管材配件",
     "天擎鑫",
+    "台北接線盒供應商",
+    "中山區管材配件",
+    "台北水電材料批發",
   ],
   openGraph: {
     siteName: "天擎鑫有限公司",
@@ -61,6 +64,37 @@ export const metadata: Metadata = {
 };
 
 const gaId = process.env.NEXT_PUBLIC_GA_ID;
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "接線盒有哪些種類與材質？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "天擎鑫供應單聯、八角、雙連、歐規等多種接線盒，材質包含鍍鋅鋼板、熱浸鍍鋅、白鐵（不鏽鋼）及烤漆，適用各類建築水電配管工程。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "牙條有哪些規格可選？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "提供鍍鋅鋼及不鏽鋼材質牙條，多種規格與長度齊全，長期穩定大量供應，量大價優。",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "防水金屬軟管適用於哪些場所？",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "防水金屬軟管分為鍍鋅及不鏽鋼材質，外覆PVC防水防塵，適用於建築機電、化工廠房、食品工廠等需要防水防塵的配管場所。",
+      },
+    },
+  ],
+};
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
@@ -103,6 +137,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationJsonLd),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(faqJsonLd),
           }}
         />
         {gaId && (
