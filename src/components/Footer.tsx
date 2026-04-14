@@ -71,7 +71,29 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-6 text-center text-sm text-gray-500">
+        {/* Partner */}
+        <div className="border-t border-gray-800 mt-8 pt-6">
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <span className="text-xs text-gray-600 tracking-widest">合作夥伴</span>
+          </div>
+          <div className="flex justify-center">
+            <a
+              href="https://halu0915.github.io/nstar-website/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 rounded-lg border border-gray-800 hover:border-gold-500/30 transition-colors group"
+            >
+              <span className="text-sm font-bold text-gray-400 group-hover:text-white transition-colors">
+                N<span className="text-green-500">+</span>Star
+              </span>
+              <span className="text-xs text-gray-600 group-hover:text-gray-400 transition-colors">
+                恩加斯達國際 — 智慧能源與機電工程
+              </span>
+            </a>
+          </div>
+        </div>
+
+        <div className="border-t border-gray-800 mt-6 pt-6 text-center text-sm text-gray-500">
           &copy; {new Date().getFullYear()} 天擎鑫有限公司. All rights reserved.
         </div>
       </div>
