@@ -162,7 +162,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: "天擎鑫網站 <onboarding@resend.dev>",
-      to: "TianQingHsin@gmail.com",
+      to: "tianqinghsin@gmail.com",
       subject: `[網站聯絡] ${escapeHtml(subject)}`,
       replyTo: email,
       html: `
