@@ -82,9 +82,12 @@ export default function ServicesPage() {
       {/* Page Header */}
       <section className="bg-gradient-to-br from-dark-900 to-dark-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">服務項目</h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            從標準水電材料供應到客製化配管工程需求，提供完整的管材配件與電氣配件解決方案
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">工地缺料不是你的錯</h1>
+          <p className="text-gold-300 text-xl max-w-2xl mx-auto mb-3">
+            是沒人盯著。我們盯。
+          </p>
+          <p className="text-gray-400 text-sm max-w-2xl mx-auto">
+            從標準水電材料供應到客製化配管工程需求，完整的管材配件解決方案
           </p>
         </div>
       </section>

@@ -255,9 +255,12 @@ export default function ProductsPage() {
       {/* Page Header */}
       <section className="bg-gradient-to-br from-dark-900 to-dark-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">產品介紹</h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件、防水金屬軟管 — 水電材料與電氣配件一站式供應
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">會找我們的，都是工地老手</h1>
+          <p className="text-gold-300 text-xl max-w-2xl mx-auto mb-3">
+            老客戶不用比規格，我們懂你工地要什麼。
+          </p>
+          <p className="text-gray-400 text-sm max-w-2xl mx-auto">
+            接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件、防水金屬軟管
           </p>
         </div>
       </section>

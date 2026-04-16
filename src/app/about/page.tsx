@@ -51,8 +51,11 @@ export default function AboutPage() {
       <section className="bg-gradient-to-br from-dark-900 to-dark-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">關於我們</h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            以專業技術、品質追求、服務至上的信念，為建築水電工程客戶提供最佳管材配件解決方案
+          <p className="text-gold-300 text-xl max-w-2xl mx-auto mb-3">
+            監工睡得著的秘密，是知道誰在幫他顧料。
+          </p>
+          <p className="text-gray-400 text-sm max-w-2xl mx-auto">
+            這是我們 10+ 年做這行的唯一目標。
           </p>
         </div>
       </section>

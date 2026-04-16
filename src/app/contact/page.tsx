@@ -100,8 +100,11 @@ export default function ContactPage() {
       <section className="bg-gradient-to-br from-dark-900 to-dark-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">聯絡我們</h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            接線盒、牙條、管配件等水電材料詢價，或任何合作需求，歡迎隨時與我們聯繫
+          <p className="text-gold-300 text-xl max-w-2xl mx-auto mb-3">
+            從詢價到到貨，只做一件事：讓你工地不出錯。
+          </p>
+          <p className="text-gray-400 text-sm max-w-2xl mx-auto">
+            水電材料詢價、合作需求，歡迎聯繫
           </p>
         </div>
       </section>

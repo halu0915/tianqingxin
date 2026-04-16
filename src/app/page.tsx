@@ -110,9 +110,8 @@ export default function HomePage() {
             <br />
             <span className="text-gold-400">專業管材配件 品質值得信賴</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
-            天擎鑫有限公司專營水電材料與電氣配件，提供各式接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，
-            以專業配管工程經驗與完整產品線，滿足建築工程、水電工程及機電工程需求。
+          <p className="text-lg md:text-xl text-gray-300 max-w-xl mx-auto mb-10 leading-relaxed">
+            水電材料與電氣配件，一站式供應。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
