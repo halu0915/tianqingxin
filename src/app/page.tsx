@@ -106,16 +106,13 @@ export default function HomePage() {
             接線盒 / 牙條 / 鑄鐵另件 / 不銹鋼另件 / 機械接頭 / 管配件 / 防水金屬軟管
           </p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            工地缺料不是你的錯
+            天擎鑫有限公司
             <br />
-            <span className="text-gold-400">是沒人盯著。我們盯。</span>
+            <span className="text-gold-400">專業管材配件 品質值得信賴</span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-4 leading-relaxed">
-            監工睡得著的秘密，是知道誰在幫他顧料。
-          </p>
-          <p className="text-sm md:text-base text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed">
-            天擎鑫有限公司 — 接線盒、牙條、鑄鐵/不銹鋼另件、機械接頭、管配件、防水金屬軟管。
-            從老師傅到大型建案，工地要的東西我們都備著。
+          <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
+            天擎鑫有限公司專營水電材料與電氣配件，提供各式接線盒、牙條、鑄鐵另件、不銹鋼另件、機械接頭、管配件及防水金屬軟管，
+            以專業配管工程經驗與完整產品線，滿足建築工程、水電工程及機電工程需求。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
