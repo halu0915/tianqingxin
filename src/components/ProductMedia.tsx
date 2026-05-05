@@ -29,15 +29,42 @@ export default function ProductMedia({ items, productName }: Props) {
             }`}
           >
             {item.type === "video" ? (
-              <video
-                src={item.src}
-                className="w-full h-full object-cover"
-                controls
-                muted
-                playsInline
-                preload="metadata"
-                aria-label={item.alt}
-              />
+              <>
+                <video
+                  src={item.src}
+                  className="w-full h-full object-cover"
+                  controls
+                  muted
+                  playsInline
+                  preload="metadata"
+                  aria-label={item.alt}
+                />
+                <button
+                  type="button"
+                  aria-label="放大影片到全螢幕"
+                  title="點此放大全螢幕"
+                  onClick={(e) => {
+                    const v = e.currentTarget.parentElement?.querySelector("video");
+                    v?.requestFullscreen?.();
+                  }}
+                  className="absolute top-2 right-2 z-20 w-9 h-9 rounded-md bg-black/50 hover:bg-black/70 text-white flex items-center justify-center transition-colors backdrop-blur-sm"
+                >
+                  <svg
+                    className="w-5 h-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4"
+                    />
+                  </svg>
+                </button>
+              </>
             ) : (
               <Image
                 src={item.src}
