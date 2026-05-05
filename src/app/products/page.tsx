@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { productIconMap, productItemIconMap } from "@/components/ProductIcons";
+import ProductMedia, { type MediaItem } from "@/components/ProductMedia";
 
 const SITE_URL = "https://tianqingxin.vercel.app";
 
@@ -19,7 +20,15 @@ export const metadata: Metadata = {
   },
 };
 
-const categories = [
+type Product = {
+  name: string;
+  material: string;
+  desc: string;
+  variantNote?: string;
+  media?: MediaItem[];
+};
+
+const categories: { title: string; products: Product[] }[] = [
   {
     title: "接線盒",
     products: [
@@ -37,6 +46,24 @@ const categories = [
         name: "八角 BOX 接線盒",
         material: "鍍鋅鋼板 / 熱浸鍍鋅 / 烤漆",
         desc: "多角度出線設計，廣泛用於燈具、吊扇等天花板安裝。",
+        variantNote: "可選烤漆色：紅 / 藍 / 客製",
+        media: [
+          {
+            type: "video",
+            src: "/videos/octagonal-junction-box.mp4",
+            alt: "八角 BOX 接線盒 360 度產品展示影片 — 天擎鑫有限公司",
+          },
+          {
+            type: "image",
+            src: "/images/products/octagonal-box-red.jpg",
+            alt: "紅色烤漆八角 BOX 接線盒（適用消防系統分色） — 天擎鑫有限公司",
+          },
+          {
+            type: "image",
+            src: "/images/products/octagonal-box-blue.jpg",
+            alt: "藍色烤漆八角 BOX 接線盒（適用空調 / 弱電系統分色） — 天擎鑫有限公司",
+          },
+        ],
       },
       {
         name: "八角加深 BOX",
@@ -295,8 +322,10 @@ export default function ProductsPage() {
                     key={product.name}
                     className="bg-warm-50 border border-warm-200 rounded-2xl overflow-hidden hover:shadow-lg hover:border-gold-200 transition-all"
                   >
-                    <div className="bg-warm-200 h-48 flex items-center justify-center">
-                      {(() => {
+                    <div className="bg-warm-200 h-64 flex items-center justify-center overflow-hidden">
+                      {product.media && product.media.length > 0 ? (
+                        <ProductMedia items={product.media} productName={product.name} />
+                      ) : (() => {
                         const Icon = productItemIconMap[product.name] || productIconMap[cat.title];
                         return Icon ? (
                           <Icon className="w-24 h-24 text-gray-400" />
@@ -310,9 +339,16 @@ export default function ProductsPage() {
                       <p className="text-gray-500 text-sm mb-3">
                         {product.desc}
                       </p>
-                      <p className="text-xs text-gold-600 bg-gold-50 inline-block px-3 py-1 rounded-full">
-                        材質：{product.material}
-                      </p>
+                      <div className="flex flex-wrap gap-2">
+                        <p className="text-xs text-gold-600 bg-gold-50 inline-block px-3 py-1 rounded-full">
+                          材質：{product.material}
+                        </p>
+                        {product.variantNote && (
+                          <p className="text-xs text-dark-700 bg-warm-100 border border-warm-200 inline-block px-3 py-1 rounded-full">
+                            ✦ {product.variantNote}
+                          </p>
+                        )}
+                      </div>
                     </div>
                   </div>
                 ))}
