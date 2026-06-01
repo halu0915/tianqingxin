@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
-const SITE_URL = "https://tianqingxin.vercel.app";
+const SITE_URL = "https://tianqingxin.com";
 
 export const metadata: Metadata = {
   title: "關於我們",

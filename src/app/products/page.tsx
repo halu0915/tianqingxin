@@ -3,7 +3,7 @@ import Link from "next/link";
 import { productIconMap, productItemIconMap } from "@/components/ProductIcons";
 import ProductMedia, { type MediaItem } from "@/components/ProductMedia";
 
-const SITE_URL = "https://tianqingxin.vercel.app";
+const SITE_URL = "https://tianqingxin.com";
 
 export const metadata: Metadata = {
   title: "產品介紹",

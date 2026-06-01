@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-const SITE_URL = "https://tianqingxin.vercel.app";
+const SITE_URL = "https://tianqingxin.com";
 
 export const metadata: Metadata = {
   title: "防水金屬軟管選購與安裝要點",

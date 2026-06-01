@@ -36,7 +36,7 @@ function isOriginAllowed(origin: string | null): boolean {
   const allowedOrigins: string[] = [
     "http://localhost:3000",
     "https://localhost:3000",
-    "https://tianqingxin.vercel.app",
+    "https://tianqingxin.com",
   ];
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
